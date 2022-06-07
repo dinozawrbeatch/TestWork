@@ -1,7 +1,7 @@
 # TestWork 
 # API documentation
 Запрос должен выглядеть так : http://testwork/api/?method=method_name
-### Methods addWorker :
+### Method addWorker :
 Регистрирует пользователя
 #### Params:
 + email - почта сотрудника
@@ -30,4 +30,4 @@
 { result = 'error' };
 
 # need
-1. Дописать клиент и стили
+1. Сделать красивые стили
