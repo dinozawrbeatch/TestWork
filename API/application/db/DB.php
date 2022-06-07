@@ -26,9 +26,10 @@ class DB
     }
 
     public function addWorker($email, $fullName, $age, $experience, $avgSalary, $photoName){
+        $imageVariable = ($photoName == '') ? '' : "$this->siteLink/images/$photoName";
         $query = "INSERT INTO `workers`
         (email, fullName, age, experience, avgSalary, photo)
-        VALUES ('$email', '$fullName', $age, $experience, $avgSalary, '$photoName')";
+        VALUES ('$email', '$fullName', $age, $experience, $avgSalary, '$imageVariable')";
         $result = $this->db->query($query);
         if($result){
             return true;
@@ -41,9 +42,9 @@ class DB
             ->fetchAll(PDO::FETCH_ASSOC);
     }
 
-    public function getWorker($email){
+    public function getWorker($id){
         $query = "SELECT * FROM `workers`
-        WHERE email= '$email'";
+        WHERE id= '$id'";
         return $this->db->query($query)
             ->fetchObject();
     }

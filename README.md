@@ -23,7 +23,7 @@
 ### Method getWorker :
 Возвращает информацию об одном сотруднике
 #### Params:
-+ email
++ id
 ##### Positive response:
 { result="ok", data = worker }
 ##### Negative response:

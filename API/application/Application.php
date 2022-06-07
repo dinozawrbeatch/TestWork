@@ -26,9 +26,9 @@ class Application
     }
 
     public function getWorker($params){
-        $email = $params['email'];
-        if($email){
-            return $this->db->getWorker($email);
+        $id = $params['id'];
+        if($id){
+            return $this->db->getWorker($id);
         }
     }
 }

@@ -8,7 +8,28 @@
     <title>TestWork</title>
 </head>
 <body>
-    <!-- Отправлять с клиента преобразованное ФИО -->
+    <div class="form">
+        <label class="title">
+            Введите данные сотрудника
+        </label>
+        <input class="text" type="email" id="email" placeholder="email">
+        <input class="text" type="text" id="name" placeholder="Имя">
+        <input class="text" type="text" id="lastName" placeholder="Фамилию">
+        <input class="text" type="text" id="middleName" placeholder="Отчество">
+        <input class="text" type="number" id="age" placeholder="Возраст">
+        <input class="text" type="number" id="experience" placeholder="Опыт работы">
+        <input class="text" type="file" id="photo" Загрузите фото> 
+        <input class="text" type="number" id="avgSalary" placeholder="Средняя зарплата">
+        <button id="send">Занести сотрудника в базу данных</button>
+        <button id="getAllWorkers">Вывести всех сотрудников</button>
+    </div>
+
+    <div class="list" id="list">
+        Список всех сотрудников: 
+    </div>
+    <div class="workerInfo" id="workerInfo">
+        Информация о сотруднике
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
