@@ -29,6 +29,7 @@ body {
 
 .workers {
     width: 100%;
+    border: 1px;
     background-color: rgb(160, 158, 158);
     display: flex;
     flex-direction: column;
