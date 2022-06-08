@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 08 2022 г., 14:47
+-- Время создания: Июн 08 2022 г., 14:52
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.3.29
 
@@ -36,14 +36,6 @@ CREATE TABLE `workers` (
   `avgSalary` int NOT NULL,
   `photo` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-
---
--- Дамп данных таблицы `workers`
---
-
-INSERT INTO `workers` (`id`, `email`, `fullName`, `age`, `experience`, `avgSalary`, `photo`) VALUES
-(12, 'dinarchik2002@mail.ru', 'Динар Латипов Салаватович', 321, 321, 321, 'http://testwork/images/bb827fa159a9436ea03ab425a0ea144e.png'),
-(13, 'gagaga@mail.ru', 'Максим Пигалов Сергеевич', 20, 2, 1000000, 'http://testwork/images/bee8a40c623b60529447450fb5daae42.png');
 
 --
 -- Индексы сохранённых таблиц
